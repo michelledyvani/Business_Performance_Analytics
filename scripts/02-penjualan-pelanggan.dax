@@ -1,0 +1,33 @@
+// Rumus Power BI — salin satu measure per kali.
+
+// SALES_KPI
+Nilai_6_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_SALES'[Tahun penjualan], "Semua tahun") RETURN CALCULATE(MAX('SALES_KPI'[K1]), 'SALES_KPI'[Pilihan] = pilihanAktif)
+
+// SALES_KPI
+Nilai_6_2 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_SALES'[Tahun penjualan], "Semua tahun") RETURN CALCULATE(MAX('SALES_KPI'[K2]), 'SALES_KPI'[Pilihan] = pilihanAktif)
+
+// SALES_KPI
+Nilai_6_3 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_SALES'[Tahun penjualan], "Semua tahun") RETURN CALCULATE(MAX('SALES_KPI'[K3]), 'SALES_KPI'[Pilihan] = pilihanAktif)
+
+// SALES_KPI
+Nilai_6_4 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_SALES'[Tahun penjualan], "Semua tahun") RETURN CALCULATE(MAX('SALES_KPI'[K4]), 'SALES_KPI'[Pilihan] = pilihanAktif)
+
+// SALES_Grafik_1
+Nilai_7_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_SALES'[Tahun penjualan], "Semua tahun") RETURN CALCULATE(SUM('SALES_Grafik_1'[Penjualan]), 'SALES_Grafik_1'[Pilihan] = pilihanAktif)
+
+// SALES_Grafik_2
+Nilai_8_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_SALES'[Tahun penjualan], "Semua tahun") RETURN CALCULATE(SUM('SALES_Grafik_2'[Penjualan]), 'SALES_Grafik_2'[Pilihan] = pilihanAktif)
+
+// SALES_Grafik_3
+Nilai_9_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_SALES'[Tahun penjualan], "Semua tahun") RETURN CALCULATE(SUM('SALES_Grafik_3'[Penjualan]), 'SALES_Grafik_3'[Pilihan] = pilihanAktif)
+
+// SALES_Grafik_4
+Nilai_10_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_SALES'[Tahun penjualan], "Semua tahun") RETURN CALCULATE(SUM('SALES_Grafik_4'[Penjualan]), 'SALES_Grafik_4'[Pilihan] = pilihanAktif)

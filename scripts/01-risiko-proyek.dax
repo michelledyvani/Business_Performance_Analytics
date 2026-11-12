@@ -1,0 +1,33 @@
+// Rumus Power BI — salin satu measure per kali.
+
+// RISK_KPI
+Nilai_1_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_RISK'[Bulan laporan], "2026-05") RETURN CALCULATE(MAX('RISK_KPI'[K1]), 'RISK_KPI'[Pilihan] = pilihanAktif)
+
+// RISK_KPI
+Nilai_1_2 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_RISK'[Bulan laporan], "2026-05") RETURN CALCULATE(MAX('RISK_KPI'[K2]), 'RISK_KPI'[Pilihan] = pilihanAktif)
+
+// RISK_KPI
+Nilai_1_3 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_RISK'[Bulan laporan], "2026-05") RETURN CALCULATE(MAX('RISK_KPI'[K3]), 'RISK_KPI'[Pilihan] = pilihanAktif)
+
+// RISK_KPI
+Nilai_1_4 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_RISK'[Bulan laporan], "2026-05") RETURN CALCULATE(MAX('RISK_KPI'[K4]), 'RISK_KPI'[Pilihan] = pilihanAktif)
+
+// RISK_Grafik_1
+Nilai_2_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_RISK'[Bulan laporan], "2026-05") RETURN CALCULATE(SUM('RISK_Grafik_1'[Persen]), 'RISK_Grafik_1'[Pilihan] = pilihanAktif)
+
+// RISK_Grafik_2
+Nilai_3_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_RISK'[Bulan laporan], "2026-05") RETURN CALCULATE(SUM('RISK_Grafik_2'[Hari]), 'RISK_Grafik_2'[Pilihan] = pilihanAktif)
+
+// RISK_Grafik_3
+Nilai_4_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_RISK'[Bulan laporan], "2026-05") RETURN CALCULATE(SUM('RISK_Grafik_3'[Jadwal]), 'RISK_Grafik_3'[Pilihan] = pilihanAktif)
+
+// RISK_Grafik_4
+Nilai_5_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_RISK'[Bulan laporan], "2026-05") RETURN CALCULATE(SUM('RISK_Grafik_4'[Revisi]), 'RISK_Grafik_4'[Pilihan] = pilihanAktif)

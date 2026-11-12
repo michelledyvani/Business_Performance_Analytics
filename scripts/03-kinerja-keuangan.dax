@@ -1,0 +1,37 @@
+// Rumus Power BI — salin satu measure per kali.
+
+// FINANCE_KPI
+Nilai_11_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_FINANCE'[Kuartal], "Semua kuartal") RETURN CALCULATE(MAX('FINANCE_KPI'[K1]), 'FINANCE_KPI'[Pilihan] = pilihanAktif)
+
+// FINANCE_KPI
+Nilai_11_2 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_FINANCE'[Kuartal], "Semua kuartal") RETURN CALCULATE(MAX('FINANCE_KPI'[K2]), 'FINANCE_KPI'[Pilihan] = pilihanAktif)
+
+// FINANCE_KPI
+Nilai_11_3 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_FINANCE'[Kuartal], "Semua kuartal") RETURN CALCULATE(MAX('FINANCE_KPI'[K3]), 'FINANCE_KPI'[Pilihan] = pilihanAktif)
+
+// FINANCE_KPI
+Nilai_11_4 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_FINANCE'[Kuartal], "Semua kuartal") RETURN CALCULATE(MAX('FINANCE_KPI'[K4]), 'FINANCE_KPI'[Pilihan] = pilihanAktif)
+
+// FINANCE_Grafik_1
+Nilai_12_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_FINANCE'[Kuartal], "Semua kuartal") RETURN CALCULATE(SUM('FINANCE_Grafik_1'[Realisasi]), 'FINANCE_Grafik_1'[Pilihan] = pilihanAktif)
+
+// FINANCE_Grafik_1
+Nilai_12_2 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_FINANCE'[Kuartal], "Semua kuartal") RETURN CALCULATE(SUM('FINANCE_Grafik_1'[Anggaran]), 'FINANCE_Grafik_1'[Pilihan] = pilihanAktif)
+
+// FINANCE_Grafik_2
+Nilai_13_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_FINANCE'[Kuartal], "Semua kuartal") RETURN CALCULATE(SUM('FINANCE_Grafik_2'[Margin]), 'FINANCE_Grafik_2'[Pilihan] = pilihanAktif)
+
+// FINANCE_Grafik_3
+Nilai_14_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_FINANCE'[Kuartal], "Semua kuartal") RETURN CALCULATE(SUM('FINANCE_Grafik_3'[Selisih]), 'FINANCE_Grafik_3'[Pilihan] = pilihanAktif)
+
+// FINANCE_Grafik_4
+Nilai_15_1 =
+VAR pilihanAktif = SELECTEDVALUE('Filter_FINANCE'[Kuartal], "Semua kuartal") RETURN CALCULATE(SUM('FINANCE_Grafik_4'[Nilai]), 'FINANCE_Grafik_4'[Pilihan] = pilihanAktif)
